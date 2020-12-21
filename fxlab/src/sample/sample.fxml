@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: \\;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <AnchorPane prefHeight="71.0" prefWidth="600.0" style="-fx-background-color: white;">
+            <effect>
+                <DropShadow color="#545252" />
+            </effect>
+            <children>
+              <Button id="SerializationButton" fx:id="SerializationButton" layoutX="14.0" layoutY="13.0" mnemonicParsing="false" opacity="0.83" prefHeight="46.0" prefWidth="102.0" text="Serialization">
+                  <font>
+                      <Font size="15.0" />
+                  </font>
+                  <effect>
+                      <Blend />
+                  </effect>
+              </Button>
+              <Button id="DeserializationButton" fx:id="DeserializationButton" layoutX="454.0" layoutY="13.0" mnemonicParsing="false" opacity="0.83" prefHeight="46.0" prefWidth="132.0" text="Deserialization">
+                  <font>
+                      <Font size="15.0" />
+                  </font>
+                  <effect>
+                      <Blend />
+                  </effect>
+              </Button>
+            </children>
+        </AnchorPane>
+        <TextField id="teacherName" fx:id="teacherName" layoutX="23.0" layoutY="123.0" prefHeight="25.0" prefWidth="102.0" />
+        <Button id="createTeacher" fx:id="createTeacher" layoutX="401.0" layoutY="358.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="76.0" text="Create">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <Label layoutX="22.0" layoutY="102.0" text="Name" />
+        <Label layoutX="22.0" layoutY="155.0" text="Surname" />
+        <TextField id="teacherSurname" fx:id="teacherSurname" layoutX="23.0" layoutY="172.0" prefHeight="25.0" prefWidth="102.0" />
+        <TextField id="teacherAge" fx:id="teacherAge" layoutX="23.0" layoutY="220.0" prefHeight="25.0" prefWidth="102.0" />
+        <Label layoutX="22.0" layoutY="200.0" text="Age" />
+        <TextField id="teacherDegree" fx:id="teacherDegree" layoutX="23.0" layoutY="272.0" prefHeight="25.0" prefWidth="102.0" />
+        <Label layoutX="23.0" layoutY="255.0" text="Degree" />
+        <TextField id="teacherCourseWorkId" fx:id="teacherCourseWorkId" layoutX="23.0" layoutY="318.0" prefHeight="25.0" prefWidth="102.0" />
+        <Label layoutX="23.0" layoutY="301.0" text="Course" />
+        <Label layoutX="337.0" layoutY="149.0" text="Surname" />
+        <TextField id="studentSurname" fx:id="studentSurname" layoutX="337.0" layoutY="174.0" prefHeight="25.0" prefWidth="102.0" />
+        <TextField id="studentAge" fx:id="studentAge" layoutX="337.0" layoutY="222.0" prefHeight="25.0" prefWidth="102.0" />
+        <Label layoutX="337.0" layoutY="201.0" text="Age" />
+        <TextField id="studentTeaccherId" fx:id="studentTeaccherId" layoutX="337.0" layoutY="274.0" prefHeight="25.0" prefWidth="102.0" />
+        <Label layoutX="337.0" layoutY="257.0" text="TeacherID" />
+        <TextField id="studentCourseWork" fx:id="studentCourseWork" layoutX="337.0" layoutY="320.0" prefHeight="25.0" prefWidth="102.0" />
+        <Label layoutX="337.0" layoutY="303.0" text="Course" />
+        <Button id="createStudent" fx:id="createStudent" layoutX="87.0" layoutY="358.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="76.0" text="Create">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <TextField id="teacherId" fx:id="teacherId" layoutX="23.0" layoutY="360.0" prefHeight="25.0" prefWidth="38.0" />
+        <Label layoutX="27.0" layoutY="343.0" text="ID" />
+        <TextField id="studentId" fx:id="studentId" layoutX="338.0" layoutY="360.0" prefHeight="25.0" prefWidth="38.0" />
+        <Label layoutX="342.0" layoutY="345.0" text="ID" />
+        <Label layoutX="337.0" layoutY="104.0" text="Name" />
+        <TextField id="studentName" fx:id="studentName" layoutX="337.0" layoutY="124.0" prefHeight="25.0" prefWidth="102.0" />
+        <Text layoutX="24.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Teacher">
+            <font>
+                <Font size="17.0" />
+            </font>
+        </Text>
+        <Text layoutX="329.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Student ">
+            <font>
+                <Font size="17.0" />
+            </font>
+        </Text>
+    </children>
+    <cursor>
+        <Cursor fx:constant="DEFAULT" />
+    </cursor>
+    <effect>
+        <DropShadow />
+    </effect>
+</AnchorPane>
